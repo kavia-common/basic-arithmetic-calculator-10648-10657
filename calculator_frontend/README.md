@@ -1,13 +1,34 @@
-# Lightweight React Template for KAVIA
+# Calculator Frontend - React Application
 
-This project provides a minimal React template with a clean, modern UI and minimal dependencies.
+A minimalistic, responsive React-based calculator application with a light theme and modern design.
 
 ## Features
 
-- **Lightweight**: No heavy UI frameworks - uses only vanilla CSS and React
-- **Modern UI**: Clean, responsive design with KAVIA brand styling
-- **Fast**: Minimal dependencies for quick loading times
-- **Simple**: Easy to understand and modify
+- **Numeric Keypad**: Full 0-9 number input with decimal point support
+- **Basic Arithmetic Operations**: Addition (+), Subtraction (-), Multiplication (×), Division (÷)
+- **Clear/Reset**: Clear button (C) to reset all calculations
+- **Intermediate Expression Display**: Shows ongoing calculations and results
+- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
+- **Light Theme**: Clean, modern interface with specified color palette
+- **Centered Layout**: Calculator is perfectly centered with an elegant design
+
+## Component Architecture
+
+The calculator is built with a modular React component structure:
+
+- **App.js**: Main application component with centered layout
+- **Calculator.js**: Core calculator logic and state management
+- **Display.js**: Shows current value and calculation expressions
+- **Keypad.js**: Grid layout of all calculator buttons
+- **Button.js**: Reusable button component with styling
+
+## Color Palette
+
+The application uses the following color scheme:
+- **Primary**: #1976d2 (Blue - for operators and equals)
+- **Secondary**: #424242 (Dark Gray - for display background and text)
+- **Accent**: #ffb300 (Orange - for clear button)
+- **Background**: Light gradient with white calculator body
 
 ## Getting Started
 
@@ -27,31 +48,31 @@ Launches the test runner in interactive watch mode.
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Customization
+## Usage
 
-### Colors
+1. **Number Input**: Click any number (0-9) to input values
+2. **Decimal Point**: Click "." to add decimal numbers
+3. **Operations**: Click +, -, ×, or ÷ to perform calculations
+4. **Equals**: Click "=" to get the final result
+5. **Clear**: Click "C" to reset the calculator
+6. **Expression Display**: View ongoing calculations in the top area of the display
 
-The main brand colors are defined as CSS variables in `src/App.css`:
+## Responsive Design
 
-```css
-:root {
-  --kavia-orange: #E87A41;
-  --kavia-dark: #1A1A1A;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
-}
-```
+The calculator automatically adapts to different screen sizes:
+- **Desktop**: Full-size calculator with large buttons
+- **Tablet**: Optimized button sizes and spacing
+- **Mobile**: Compact layout that fits mobile screens
+- **Small Screens**: Further reduced sizing for very small devices
 
-### Components
+## Technical Features
 
-This template uses pure HTML/CSS components instead of a UI framework. You can find component styles in `src/App.css`. 
-
-Common components include:
-- Buttons (`.btn`, `.btn-large`)
-- Container (`.container`)
-- Navigation (`.navbar`)
-- Typography (`.title`, `.subtitle`, `.description`)
+- Modern React functional components with hooks
+- CSS Grid layout for precise button positioning
+- CSS variables for consistent theming
+- Responsive breakpoints for all device sizes
+- Smooth animations and hover effects
+- Proper semantic HTML and accessibility considerations
 
 ## Learn More
 

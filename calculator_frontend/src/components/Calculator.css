@@ -1,0 +1,25 @@
+.calculator {
+  max-width: 320px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .calculator {
+    max-width: 95%;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .calculator {
+    max-width: 100%;
+    margin: 5px auto;
+    border-radius: 8px;
+  }
+}
